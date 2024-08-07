@@ -1,0 +1,6 @@
+<div>
+    <input [ngModel]="data" (ngModelChange)="onInputChange($event)" placeholder="Enter data" />
+    <p>The entered data is: {{ data | uppercase }}</p>
+    <p *ngIf="data.length > 5">Data length is greater than 5 characters!</p>
+  </div>
+  

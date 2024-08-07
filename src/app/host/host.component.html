@@ -1,0 +1,6 @@
+<div>
+    <h1>Host Component</h1>
+    <app-dumb [data]="hostData" (dataChange)="hostData = $event"></app-dumb>
+    <p>Data in Host Component: {{ hostData | lowercase }}</p>
+  </div>
+  
